@@ -4,7 +4,7 @@
 //! ## Installation
 //! ```toml
 //! [dependencies]
-//! adventurous = "0.0.1"
+//! adventurous = "0.0.2"
 //! ```
 
 mod input;

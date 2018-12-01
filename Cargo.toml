@@ -1,6 +1,6 @@
 [package]
 name = "adventurous"
-version = "0.0.1"
+version = "0.0.2"
 description = "A utility library for solving Advent of Code puzzles."
 repository = "https://github.com/maxdeviant/adventurous"
 keywords = ["advent", "code"]
