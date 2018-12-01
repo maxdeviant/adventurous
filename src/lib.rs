@@ -1,3 +1,7 @@
+mod input;
+
+pub use self::input::*;
+
 #[cfg(test)]
 mod tests {
     #[test]
