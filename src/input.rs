@@ -3,6 +3,7 @@ use std::io::Read;
 use std::path::Path;
 
 /// The input for an Advent of Code puzzle.
+#[derive(Debug)]
 pub struct Input {
     pub value: String,
 }
