@@ -1,7 +1,11 @@
 [package]
 name = "adventurous"
 version = "0.0.1"
+description = "A utility library for Advent of Code."
+repository = "https://github.com/maxdeviant/adventurous"
+keywords = ["advent of code"]
 authors = ["Marshall Bowers <elliott.codes@gmail.com>"]
+license = "MIT"
 edition = "2018"
 
 [dependencies]
