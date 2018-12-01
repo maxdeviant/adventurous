@@ -1,5 +1,11 @@
-//! `adventurous` provides utilties to assist you in solving
+//! Adventurous provides utilties to assist you in solving
 //! [Advent of Code](https://adventofcode.com) puzzles.
+//! 
+//! ## Installation
+//! ```toml
+//! [dependencies]
+//! adventurous = "0.0.1"
+//! ```
 
 mod input;
 
