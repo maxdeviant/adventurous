@@ -8,7 +8,7 @@
 //! ## Installation
 //! ```toml
 //! [dependencies]
-//! adventurous = "0.0.2"
+//! adventurous = "0.0.3"
 //! ```
 //!
 //! ## Examples
