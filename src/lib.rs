@@ -10,6 +10,24 @@
 //! [dependencies]
 //! adventurous = "0.0.2"
 //! ```
+//!
+//! ## Examples
+//!
+//! ### Reading Puzzle Input
+//!
+//! ```no_run
+//! extern crate adventurous;
+//!
+//! use adventurous::Input;
+//!
+//! fn main() -> std::io::Result<()> {
+//!     let input = Input::from_file("input.txt")?;
+//!     for line in input.value.lines() {
+//!         // Do something with the line...
+//!     }
+//!     Ok(())
+//! }
+//! ```
 
 mod input;
 mod strings;
