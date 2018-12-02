@@ -9,17 +9,17 @@ pub trait CharCounts {
 
 impl CharCounts for str {
     fn char_counts(&self) -> HashMap<char, i32> {
-        let mut letter_counts = HashMap::new();
+        let mut counts = HashMap::new();
 
-        for letter in self.chars() {
-            if !letter_counts.contains_key(&letter) {
-                letter_counts.insert(letter, 0);
+        for character in self.chars() {
+            if !counts.contains_key(&character) {
+                counts.insert(character, 0);
             }
 
-            *letter_counts.get_mut(&letter).unwrap() += 1;
+            *counts.get_mut(&character).unwrap() += 1;
         }
 
-        letter_counts
+        counts
     }
 }
 
