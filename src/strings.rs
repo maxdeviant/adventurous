@@ -24,7 +24,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn char_counts() {
+    fn test_char_counts() {
         let mut expected = HashMap::new();
         expected.insert('h', 1);
         expected.insert('e', 1);
