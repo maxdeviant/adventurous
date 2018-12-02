@@ -29,8 +29,10 @@
 //! }
 //! ```
 
+mod geometry;
 mod input;
 mod strings;
 
+pub use self::geometry::*;
 pub use self::input::*;
 pub use self::strings::*;
