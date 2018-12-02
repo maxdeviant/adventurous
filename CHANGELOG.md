@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `CharCounts` trait for counting characters in a string
+
 ## [0.0.2] - 2018-12-01
 
 ### Added
