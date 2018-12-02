@@ -1,4 +1,4 @@
-//! Adventurous provides utilties to assist you in solving
+//! Adventurous provides utilities to assist you in solving
 //! [Advent of Code](https://adventofcode.com) puzzles.
 //!
 //! [![Crates.io](https://img.shields.io/crates/v/adventurous.svg)](https://crates.io/crates/adventurous)
