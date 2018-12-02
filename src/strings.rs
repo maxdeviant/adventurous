@@ -12,11 +12,7 @@ impl CharCounts for str {
         let mut counts = HashMap::new();
 
         for character in self.chars() {
-            if !counts.contains_key(&character) {
-                counts.insert(character, 0);
-            }
-
-            *counts.get_mut(&character).unwrap() += 1;
+            *counts.entry(character).or_insert(0) += 1;
         }
 
         counts
