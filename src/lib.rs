@@ -16,8 +16,6 @@
 //! ### Reading Puzzle Input
 //!
 //! ```no_run
-//! extern crate adventurous;
-//!
 //! use adventurous::Input;
 //!
 //! fn main() -> std::io::Result<()> {
