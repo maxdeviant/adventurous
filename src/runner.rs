@@ -5,6 +5,7 @@ use anyhow::{Context, Result};
 
 use crate::{Input, Solve};
 
+/// Runs the provided solvers against the puzzle input.
 pub fn run(
     input_path: impl AsRef<Path> + Display,
     part_one: impl Solve,

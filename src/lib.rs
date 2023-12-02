@@ -13,7 +13,7 @@
 //!
 //! ## Examples
 //!
-//! ### Reading Puzzle Input
+//! ### Solving a puzzle
 //!
 //! ```no_run
 //! use adventurous::Input;
