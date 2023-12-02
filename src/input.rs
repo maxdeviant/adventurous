@@ -30,6 +30,18 @@ impl Input {
     pub fn lines(&self) -> std::str::Lines<'_> {
         self.0.lines()
     }
+
+    /// Traverses each line in the [`Input`] with the given function.
+    pub fn traverse<T, E>(
+        &self,
+        f: impl FnMut(&str) -> Result<T, E>,
+    ) -> Result<impl Iterator<Item = T>, E> {
+        Ok(self
+            .lines()
+            .map(f)
+            .collect::<Result<Vec<_>, _>>()?
+            .into_iter())
+    }
 }
 
 impl From<&str> for Input {
@@ -41,5 +53,50 @@ impl From<&str> for Input {
 impl From<String> for Input {
     fn from(value: String) -> Self {
         Self::new(value)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use indoc::indoc;
+    use pretty_assertions::assert_eq;
+
+    use super::*;
+
+    #[test]
+    pub fn test_traverse_with_oks() {
+        let input = Input::from(indoc! {"
+            1
+            2
+            3
+            4
+            5
+        "});
+
+        assert_eq!(
+            input
+                .traverse(|line| line.parse::<usize>())
+                .map(|iter| iter.sum::<usize>()),
+            Ok(1 + 2 + 3 + 4 + 5)
+        );
+    }
+
+    #[test]
+    pub fn test_traverse_with_errs() {
+        let input = Input::from(indoc! {"
+            1
+            2
+            oops
+            4
+            5
+        "});
+
+        assert_eq!(
+            input
+                .traverse(|line| line.parse::<usize>())
+                .map(|iter| iter.sum::<usize>())
+                .is_err(),
+            true
+        );
     }
 }

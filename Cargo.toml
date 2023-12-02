@@ -15,3 +15,6 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 anyhow = "1.0"
 pretty_assertions = "1.4.0"
+
+[dev-dependencies]
+indoc = "2.0.4"

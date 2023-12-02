@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added `traverse` method to `Input`
 - Added `From<&str>` and `From<String>` implementations for `Input`
 - Added `test_part_one_solution!` and `test_part_two_solution!` for testing solutions against the correct answer
 
