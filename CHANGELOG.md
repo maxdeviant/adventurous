@@ -9,7 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added `Solve` trait for implementing puzzle solvers
+- Added `run` function for solving a puzzle
+- Added `raw` method to `Input` for retrieving the raw input
+- Added `lines` method to `Input` for iterating over the lines in the input
 - Added `manhattan_distance` for computing the [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) between two points
+
+### Changed
+
+- Changed the contents of `Input` to be private
+- Changed `CharCounts` trait to use `usize`s instead of `i32`s
 
 ## [0.0.3] - 2018-12-02
 
