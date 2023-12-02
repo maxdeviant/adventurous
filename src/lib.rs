@@ -6,9 +6,10 @@
 //! [![Crates.io](https://img.shields.io/crates/l/adventurous.svg)](https://github.com/maxdeviant/adventurous/blob/main/LICENSE)
 //!
 //! ## Installation
+//!
 //! ```toml
 //! [dependencies]
-//! adventurous = "0.0.3"
+//! adventurous = "0.1.0"
 //! ```
 //!
 //! ## Examples
