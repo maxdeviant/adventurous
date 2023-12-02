@@ -23,13 +23,10 @@ use anyhow::Result;
 
 fn part_one(input: &Input) -> Result<usize> {
     Ok(input
-        .lines()
-        .map(|line| {
+        .traverse(|line| {
             // Do something with the line...
             line.parse::<usize>()
-        })
-        .collect::<Result<Vec<_>, _>>()?
-        .into_iter()
+        })?
         .sum())
 }
 
