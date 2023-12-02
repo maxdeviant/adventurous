@@ -4,11 +4,11 @@ use std::collections::HashMap;
 pub trait CharCounts {
     /// Returns a [`HashMap`] containing the number of occurrences
     /// of each character in the string.
-    fn char_counts(&self) -> HashMap<char, i32>;
+    fn char_counts(&self) -> HashMap<char, usize>;
 }
 
 impl CharCounts for str {
-    fn char_counts(&self) -> HashMap<char, i32> {
+    fn char_counts(&self) -> HashMap<char, usize> {
         let mut counts = HashMap::new();
 
         for character in self.chars() {
