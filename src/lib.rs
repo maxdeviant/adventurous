@@ -3,7 +3,7 @@
 //!
 //! [![Crates.io](https://img.shields.io/crates/v/adventurous.svg)](https://crates.io/crates/adventurous)
 //! [![Docs.rs](https://docs.rs/adventurous/badge.svg)](https://docs.rs/adventurous)
-//! [![Crates.io](https://img.shields.io/crates/l/adventurous.svg)](https://github.com/maxdeviant/adventurous/blob/master/LICENSE)
+//! [![Crates.io](https://img.shields.io/crates/l/adventurous.svg)](https://github.com/maxdeviant/adventurous/blob/main/LICENSE)
 //!
 //! ## Installation
 //! ```toml
