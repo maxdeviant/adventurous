@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `From<&str>` and `From<String>` implementations for `Input`
+
 ## [0.1.0] - 2023-12-02
 
 ### Added

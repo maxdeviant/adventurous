@@ -31,3 +31,15 @@ impl Input {
         self.0.lines()
     }
 }
+
+impl From<&str> for Input {
+    fn from(value: &str) -> Self {
+        Self::new(value.to_owned())
+    }
+}
+
+impl From<String> for Input {
+    fn from(value: String) -> Self {
+        Self::new(value)
+    }
+}
