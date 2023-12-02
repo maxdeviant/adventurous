@@ -10,6 +10,9 @@ use crate::Input;
 /// an [`Input`] and return a [`Result`] containing a type that implements [`Display`].
 ///
 /// ```
+/// use adventurous::Input;
+/// use anyhow::Result;
+///
 /// fn part_one(input: &Input) -> Result<usize> {
 ///     Ok(42)
 /// }

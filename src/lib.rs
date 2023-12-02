@@ -17,13 +17,26 @@
 //!
 //! ```no_run
 //! use adventurous::Input;
+//! use anyhow::Result;
 //!
-//! fn main() -> std::io::Result<()> {
-//!     let input = Input::from_file("input.txt")?;
-//!     for line in input.value.lines() {
-//!         // Do something with the line...
-//!     }
-//!     Ok(())
+//! fn part_one(input: &Input) -> Result<usize> {
+//!     Ok(input
+//!         .lines()
+//!         .map(|line| {
+//!             // Do something with the line...
+//!             line.parse::<usize>()
+//!         })
+//!         .collect::<Result<Vec<_>, _>>()?
+//!         .into_iter()
+//!         .sum())
+//! }
+//!
+//! fn part_two(_input: &Input) -> Result<usize> {
+//!     todo!()
+//! }
+//!
+//! fn main() -> Result<()> {
+//!     adventurous::run("input.txt", part_one, part_two)
 //! }
 //! ```
 
