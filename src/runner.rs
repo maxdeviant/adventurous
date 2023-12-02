@@ -13,8 +13,17 @@ pub fn run(
     let input = Input::from_file(&input_path)
         .with_context(|| format!("failed to read puzzle input from '{}'", input_path))?;
 
-    println!("Part One: {}", part_one.solve(&input)?);
-    println!("Part Two: {}", part_two.solve(&input)?);
+    let answer_to_part_one = part_one
+        .solve(&input)
+        .context("encountered an error while solving part one")?;
+
+    println!("Part One: {}", answer_to_part_one);
+
+    let answer_to_part_two = part_two
+        .solve(&input)
+        .context("encountered an error while solving part two")?;
+
+    println!("Part Two: {}", answer_to_part_two);
 
     Ok(())
 }
