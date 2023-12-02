@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added `From<&str>` and `From<String>` implementations for `Input`
+- Added `test_part_one_solution!` and `test_part_two_solution!` for testing solutions against the correct answer
+
+### Changed
+
+- `Solve::Answer` now requires `Debug` and `PartialEq` implementations in addition to `Display`
 
 ## [0.1.0] - 2023-12-02
 

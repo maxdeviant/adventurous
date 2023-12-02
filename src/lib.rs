@@ -5,6 +5,7 @@ mod input;
 mod runner;
 mod solve;
 mod strings;
+pub mod test;
 
 pub use geometry::*;
 pub use input::*;
