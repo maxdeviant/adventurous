@@ -29,8 +29,12 @@
 
 mod geometry;
 mod input;
+mod runner;
+mod solve;
 mod strings;
 
-pub use self::geometry::*;
-pub use self::input::*;
-pub use self::strings::*;
+pub use geometry::*;
+pub use input::*;
+pub use runner::*;
+pub use solve::*;
+pub use strings::*;

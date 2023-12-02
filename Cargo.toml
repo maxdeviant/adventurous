@@ -7,9 +7,10 @@ documentation = "https://docs.rs/adventurous"
 keywords = ["advent", "code", "aoc"]
 authors = ["Marshall Bowers <elliott.codes@gmail.com>"]
 license = "MIT"
-edition = "2018"
+edition = "2021"
 
 [badges]
 maintenance = { status = "actively-developed" }
 
 [dependencies]
+anyhow = "1.0"
