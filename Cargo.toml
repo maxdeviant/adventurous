@@ -1,20 +1,8 @@
-[package]
-name = "adventurous"
-version = "0.2.0"
-description = "A companion crate for solving Advent of Code puzzles."
-repository = "https://github.com/maxdeviant/adventurous"
-documentation = "https://docs.rs/adventurous"
-keywords = ["advent", "code", "aoc"]
-authors = ["Marshall Bowers <elliott.codes@gmail.com>"]
-license = "MIT"
-edition = "2021"
+[workspace]
+resolver = "2"
+members = ["crates/*"]
 
-[badges]
-maintenance = { status = "actively-developed" }
-
-[dependencies]
+[workspace.dependencies]
 anyhow = "1.0"
-pretty_assertions = "1.4.0"
-
-[dev-dependencies]
 indoc = "2.0.4"
+pretty_assertions = "1.4.0"
