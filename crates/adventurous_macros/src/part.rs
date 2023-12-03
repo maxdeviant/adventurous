@@ -9,6 +9,18 @@ pub enum Part {
     Two,
 }
 
+impl Part {
+    pub fn answer_fn_ident(&self) -> syn::Ident {
+        let part_number = match self {
+            Part::One => "one",
+            Part::Two => "two",
+        };
+
+        syn::parse_str::<syn::Ident>(&format!("part_{part_number}_answer"))
+            .expect("failed to create identifier")
+    }
+}
+
 pub struct PartInput {
     answer: Option<String>,
 }
@@ -39,23 +51,18 @@ impl Parse for PartInput {
 }
 
 pub fn part_impl(part: Part, input: PartInput, item: TokenStream) -> TokenStream {
-    if let Some(answer) = input.answer {
-        let part_number = match part {
-            Part::One => "one",
-            Part::Two => "two",
-        };
+    let answer_fn_ident = part.answer_fn_ident();
 
-        let answer_ident = syn::parse_str::<syn::Ident>(&format!("part_{part_number}_answer"))
-            .expect("failed to create identifier");
+    let answer = match input.answer {
+        Some(answer) => quote! { Some(#answer)},
+        None => quote! { None },
+    };
 
-        return quote! {
-            #item
+    quote! {
+        #item
 
-            fn #answer_ident() -> &'static str {
-                #answer
-            }
-        };
+        const fn #answer_fn_ident() -> Option<&'static str> {
+            #answer
+        }
     }
-
-    item
 }

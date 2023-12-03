@@ -13,4 +13,4 @@ pub use runner::*;
 pub use solve::*;
 pub use strings::*;
 
-pub use adventurous_macros::{part_one, part_two};
+pub use adventurous_macros::{part_one, part_two, test_solutions};
