@@ -10,7 +10,7 @@ Adventurous is a companion crate to assist you in solving [Advent of Code](https
 
 ```toml
 [dependencies]
-adventurous = "0.2.0"
+adventurous = "0.3.0"
 ```
 
 ## Examples
