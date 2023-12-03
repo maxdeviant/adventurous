@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added `part_one` and `part_two` attribute macros for annotating the puzzle solvers
+  - Can be used to indicate the correct answer to the puzzle once it has been solved, like so: `#[part_one(answer = "42")]`
+- Added `test_solutions!` macro for generating tests that test the solutions against their correct answers
+
+### Removed
+
+- Removed `test_part_one_solution!` and `test_part_two_solution!` in favor of `test_solutions!`
+
 ## [0.2.0] - 2023-12-02
 
 ### Added
