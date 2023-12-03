@@ -12,3 +12,5 @@ pub use input::*;
 pub use runner::*;
 pub use solve::*;
 pub use strings::*;
+
+pub use adventurous_macros::{part_one, part_two};

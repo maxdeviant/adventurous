@@ -13,6 +13,7 @@ edition = "2021"
 maintenance = { status = "actively-developed" }
 
 [dependencies]
+adventurous_macros.workspace = true
 anyhow.workspace = true
 pretty_assertions.workspace = true
 

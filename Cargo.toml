@@ -3,6 +3,10 @@ resolver = "2"
 members = ["crates/*"]
 
 [workspace.dependencies]
+adventurous_macros = { path = "crates/adventurous_macros" }
 anyhow = "1.0"
 indoc = "2.0.4"
 pretty_assertions = "1.4.0"
+proc-macro2 = "1.0.70"
+quote = "1.0.33"
+syn = "2.0.39"
