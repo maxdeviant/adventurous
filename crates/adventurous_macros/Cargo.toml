@@ -1,6 +1,12 @@
 [package]
 name = "adventurous_macros"
-version = "0.1.0"
+version = "0.2.0"
+description = "A companion crate for solving Advent of Code puzzles."
+repository = "https://github.com/maxdeviant/adventurous"
+documentation = "https://docs.rs/adventurous_macros"
+keywords = ["advent", "code", "aoc"]
+authors = ["Marshall Bowers <elliott.codes@gmail.com>"]
+license = "MIT"
 edition = "2021"
 
 [lib]
